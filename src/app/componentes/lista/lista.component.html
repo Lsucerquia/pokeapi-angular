@@ -1,0 +1,26 @@
+@for (item of pokemonesCompleto; track item.id) {
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <img [src]="item.sprites.front_default" alt="Pokemon sprite"></div>
+        <mat-card-title>{{item.name}}</mat-card-title>
+
+        <mat-card-subtitle>
+           Altura: {{ item.height }} | Peso: {{ item.weight }} kg</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <p>Habilidades</p>
+
+        <ul>
+          @for (ability of item.abilities.slice(0, 3); track ability) {
+            <li>{{ability.ability.name}}</li>
+          }
+        </ul>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <button mat-button (click)="playSound(item.cries.latest)">Sonido</button>
+      </mat-card-actions>
+    </mat-card>
+  }

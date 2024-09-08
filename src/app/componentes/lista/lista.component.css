@@ -1,0 +1,93 @@
+/* Estilo general para la tarjeta */
+.example-card {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(183, 22, 22, 0.934);
+}
+
+/* Encabezado de la tarjeta con la imagen y los detalles alineados horizontalmente */
+.mat-card-header {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen y los detalles en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para el contenedor de la imagen y los detalles del Pokémon */
+.card-header-info {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen arriba del nombre */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Espacio entre la imagen y los detalles */
+}
+
+/* Estilo para la imagen del avatar */
+.mat-card-avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Estilo para los detalles del Pokémon */
+.pokemon-details {
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el título (nombre del Pokémon) */
+.mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo para el subtítulo (altura y peso) */
+.mat-card-subtitle {
+  font-size: 16px;
+  color: #0000ff; /* Color azul para destacar */
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Estilo para el contenido de la tarjeta */
+.mat-card-content {
+  padding: 15px;
+  font-size: 16px;
+  color: #d41d1d; /* Color del texto */
+}
+
+/* Estilo para el listado de habilidades */
+.mat-card-content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Estilo para cada ítem en la lista de habilidades */
+.mat-card-content li {
+  margin-bottom: 10px; /* Espacio entre ítems */
+}
+
+/* Estilo para el botón de acción en la tarjeta */
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+/* Estilo opcional para el botón */
+.mat-button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+/* Estilo opcional para el botón al pasar el mouse sobre él */
+.mat-button:hover {
+  background-color: #0056b3;
+}
